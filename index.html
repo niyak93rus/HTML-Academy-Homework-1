@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Botanica | Цветы в Петербурге</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,19 +14,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="page-header">
-        <div class="container">
-            <nav class="header-list">
-                <ul>
-                    <li>Каталог</li>
-                    <li>Доставка и оплата</li>
-                    <li>Отзывы</li>
-                    <li><img src="files\Logo.png" width="100px" alt="Лого магазина"></li>
-                    <li>Спецпредложения</li>
-                    <li>Контакты</li>
-                    <li>Корзина</li>
+        <div class="wrapper">
+            <nav>
+                <ul class="top-nav">
+                    <li><a href=" ">Каталог</a></li>
+                    <li><a href=" ">Доставка и оплата</a></li>
+                    <li><a href=" ">Отзывы</a></li>
+                    <li><a href="index.html"><img src="files\Logo.png" width="100px" alt="Лого магазина"></a></li>
+                    <li><a href=" ">Спецпредложения</a></li>
+                    <li><a href=" ">Контакты</a></li>
+                    <li><a href=" ">Корзина</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,33 +37,105 @@
 
     <main>
         <section class="about">
-            <p class="big-text">Авторские букеты <br> <i>в Петербурге</i></p>
-            <p class="medium-text">Оригинальные свежие букеты <br> с доставкой по всему городу</p>
+            <div class="wrapper">
+                <p class="big-text">Авторские букеты <br> <i>в Петербурге</i></p>
+                <p class="medium-text">Оригинальные свежие букеты <br> с доставкой по всему городу</p>
 
-            <button class="catalog">Смотреть каталог</button>
+                <button class="button-catalog"><a href="http://127.0.0.1:5500/HTML-Academy-Homework-1/catalog.html">Смотреть каталог</a></button>
 
-            <image src="files/anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash 1.png" width="386px" height="404px" alt="Букет цветов">
+                <image id="bouq1" src="files/anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash 1.png" width="386px" height="404px" alt="Букет цветов">
 
-            <image src="files/taisiia-shestopal-JZDyFwGAEqY-unsplash 1.png" width="387px" height="420px" alt="Второй букет">
+                <image id="bouq2" src="files/taisiia-shestopal-JZDyFwGAEqY-unsplash 1.png" width="387px" height="420px" alt="Второй букет">
+            </div>
         </section>
 
         <section class="benefits">
-            <img src="files/Group 9.png" alt="Иконка грузовика">
-            <h4>Быстрая доставка</h4>
-            <p>Можем собрать букет и передать его в доставку всего за час.</p>
+            <div class="benefits">
+                <img src="files/Group 9.png" width="82" height="52" alt="Иконка грузовика">
+                <h4 class="benefit-title" id="ben-tit-1">Быстрая доставка</h4>
 
-            <img src="files/bouquet 1.png" alt="Иконка букета">
-            <h4>Всегда свежие цветы</h4>
-            <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+                <p id="ben-desc-1">Можем собрать букет и передать его в доставку всего за час.</p>
 
-            <img src="files/Group.png" alt="Иконка фотоаппарата">
-            <h4>Отправляем фото цветов</h4>
-            <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+                <img src="files/bouquet 1.png" width="82" height="52" alt="Иконка букета">
+
+                <h4 class="benefit-title" id="ben-tit-2">Всегда свежие цветы</h4>
+                <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+
+                <img src="files/Group.png" width="82" height="52" alt="Иконка фотоаппарата">
+                <h4 class="benefit-title" id="ben-tit-3">Отправляем фото цветов</h4>
+                <br>
+                <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+            </div>
         </section>
 
-    </main>
-    
+        <section class="popular">
+            <h2>Популярные букеты</h2>
+            <h3>Букет &#171;Нежность&#187;</h3>
+            <p>Элегантный букет, который станет отличным <br> подарком на день рождения или юбилей.</p>
+            
+            <p>30 x 40 см</p>
 
-    <footer></footer>
+            <h3>3600 руб.</h3>
+
+            <img src="files/imgbin_flower-bouquet-cut-flowers-floral-design-garden-roses-png 1.png" alt="Букет белых роз">
+            <button>Заказать</button>
+            <img src="files/Arrow 2.png" alt="Стрелка влево">
+            <img src="files/Arrow 1.png" alt="Стрелка вправо">
+        </section>
+
+        <section class="catalogue_parts">
+            <p>Card1</p>
+            <p>Card2</p>
+            <p>Card3</p>
+        </section>
+
+        <section class="discount">
+            <!-- post + image -->
+        </section>
+
+        <section class="steps">
+            <!-- heading + 4 steps -->
+        </section>
+
+        <section class="news">
+            <!-- post + pictures -->
+        </section>
+
+        <section class="reviews">
+            <!-- reviews -->
+        </section>
+
+        <section class="map">
+            <div class="wrapper">
+                <!-- map: picture and description -->
+                <img src="files/map.png" alt="Расположение магазина">
+                <div class="contacts">
+                    <p>Мы ждем вас</p>
+                    <p>Приходите к нам:</p>
+                    <p>Санкт-Петербург,
+                        ул. Большая Конюшенная, 19</p>
+                    <p>Режим работы:</p>
+                    <p>Пн-Вск, с 9-00 до 20-00</p>
+                    <p>Позвоните нам:</p>
+                    <p>+ 7 (812) 983-47-19</p>
+                    <p>Напишите нам:</p>
+                    <p>info@botanika.ru</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <nav>
+            <ul class="bottom-nav">
+                <li><a href="index.html"><img src="files/logo-white.svg"></a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="delivery.html">Доставка и оплата</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="specials.html">Спецпредложения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
